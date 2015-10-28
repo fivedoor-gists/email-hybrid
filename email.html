@@ -1,0 +1,222 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <!-- condense de bonnes pratiques
+        http://webdesign.tutsplus.com/tutorials/creating-a-future-proof-responsive-email-without-media-queries--cms-23919
+        https://github.com/seanpowell/Email-Boilerplate 
+        http://templates.mailchimp.com/development/css/client-specific-styles/-->
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <!--[if !mso]><!-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!--<![endif]-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="format-detection" content="telephone=no">
+        <title>Responsive Email</title>
+        <!--[if (gte mso 9)|(IE)]>
+        <style type="text/css">
+            table,
+            table td {border-collapse: collapse;}
+            table { border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; }
+        </style>
+        <![endif]-->
+        <style>
+        #outlook a {padding:0;} /* Force Outlook to provide a "view in browser" menu link. */
+        body{width:100% !important; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; margin:0; padding:0;}
+        /* Prevent Webkit and Windows Mobile platforms from changing default font sizes, while not breaking desktop design. */
+        .ExternalClass {width:100%;} /* Force Hotmail to display emails at full width */
+        .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;}
+        img{-ms-interpolation-mode: bicubic;}
+
+        /* surcharge pour orange.fr */             
+        .table {width: 640px;}
+        .table td{border-bottom: 0; line-height: normal; height: auto; padding:0;}
+
+
+        /*-- Responsive --*/
+
+    @media only screen and (max-width: 640px){
+        
+        /*-------- container --------*/         
+        body .containerBox{width: 420px !important;}
+        body .column{width: 100% !important;}
+
+        td[class=title1],h4[class=title1]{ font-size: 18px !important; line-height:normal !important }
+        td[class=fullImage]{padding-right:0 !important}
+        td[class=fullImage] img{ width: 100% !important}
+
+        td[class=content1],span[class=content1],a[class=content1]{ font-size: 16px !important; line-height:normal !important }
+
+    }
+
+    @media only screen and (max-width: 479px){
+        
+        /*-------- container --------*/         
+        body .containerBox{width: 320px !important;}
+        body .column{width: 100% !important;}
+        body img{width: 100% !important;}
+
+        a[href^="tel"], a[href^="sms"]{ text-decoration: none;color: #333333; pointer-events: none;cursor: default; }
+        .mobile_link a[href^="tel"],
+        .mobile_link a[href^="sms"]{ .text-decoration: default; .color: #01657a !important; .pointer-events: auto; .cursor: default }
+
+        td[class=cell]{ width: 300px !important; padding:10px 10px 0 10px !important; }
+        td[class=cellpadding]{ width: 100% !important; padding:20px 10px !important; }
+        table[class=fullButton],table[class=fullButton] td, center[class=fullButton]{width:100% !important;}
+
+        table[class~=hide],td[class~=hide]{ display: none !important; }
+    }
+
+    </style>
+    </head>
+
+    <body bgcolor="#efefef" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" style="margin:0; padding:0;">
+    <table bgcolor="#efefef" width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <td align="center" valign="top" bgcolor="#efefef">
+
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" class="containerWide">
+                    <tr>
+                        <td width="100%" align="center">
+
+                            <table bgcolor="#ffffff" cellpadding="0" cellspacing="0" border="0" align="center" class="containerBox" width="640">
+                                <tr>
+                                    <td class="cellpadding" style="padding:20px">
+
+                                        <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                            <tr>
+                                                <td class="title1" style="color:#333333;font-size:18px;font-family:sans-serif;font-weight:normal; padding-bottom:15px;">Nouvelle Actualit&eacute; de <strong>Pauline LAFONT</strong></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="content1" style="color:#333333;font-size:14px;font-family:sans-serif;font-weight:normal;line-height:16px;padding-bottom:15px">Pauline LAFONT vient de passer le test Vous &ecirc;tes plut&ocirc;t oiseau, rongeur ou poisson ?</td>
+                                            </tr>
+                                        </table>
+
+                                        <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                            <tr>
+                                                <td valign="top" style="padding-bottom:30px">
+                                                    <table class="column" align="left" width="220" cellpadding="0" cellspacing="0" border="0">
+                                                        <tr>
+                                                             <td class="fullImage" style="padding-right:20px;padding-bottom:5px"><img border="0" alt="" src="http://dummyimage.com/200x200/" width="200"></td>
+                                                        </tr>
+                                                    </table>
+                                                    <table class="column" align="left" cellpadding="0" cellspacing="0" border="0" width="355">
+                                                         <tr>
+                                                             <td>
+                                                                <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                                                    <tr>
+                                                                        <td class="title1" style="color:#333333;font-size:18px;font-family:sans-serif;font-weight:normal; padding-bottom:15px;">Nouvelle actualit&eacute; (Humeur) de <strong>Marc LAFON</strong></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="content1" style="color:#333333;font-size:14px;font-family:sans-serif;font-weight:normal;line-height:16px;padding-bottom:15px">Pauline LAFONT vient de passer le test Vous &ecirc;tes plut&ocirc;t oiseau, rongeur ou poisson ?</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center">
+                                                                            <!--[if mso]>
+                                                                                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://copains.fr" style="v-text-anchor:middle;width:200px; height:40px;" class="fullButton" arcsize="10%" stroke="f" fillcolor="#01657A">
+                                                                                <w:anchorlock/>
+                                                                                    <center style="color:#ffffff;color:#ffffff;font-size:14px;font-family:sans-serif;font-weight:bold;text-transform:uppercase;height:40px;width:100%;display:block">
+                                                                                    Passer le test
+                                                                                    </center>
+                                                                                </v:roundrect>
+                                                                            <![endif]--> 
+                                                                            <![if !mso]>
+                                                                            <table class="fullButton" cellspacing="0" cellpadding="0" border="0">
+                                                                                <tr>
+                                                                                    <td bgcolor="#01657A" align="center" height="40" width="200" style="color:#ffffff;font-size:14px;font-family:sans-serif;font-weight:bold;text-transform:uppercase;padding:0;-webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;display:block"><a href="http://copains.fr" style="color:#ffffff; text-decoration:none; line-height:40px; width:100%; display:inline-block">Passer le test</a></td>
+                                                                                </tr>
+                                                                            </table>
+                                                                            <![endif]>  
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                             </td>
+                                                         </tr>
+                                                     </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                        <!--[if mso]>
+                                          <table border="0" width="576" cellpadding="0" cellspacing="0" style="width: 576px;">
+                                          <tr><td width="192" style="width: 192px;" valign="top"><![endif]-->
+                                          
+                                            <table width="192" border="0" cellpadding="0" cellspacing="0" align="left" class="column" style="width: 192px;">
+                                              <tr>
+                                                <td class="col" valign="top" style="padding-left:12px;padding-right:12px;padding-top:18px;padding-bottom:12px">
+                                                  <table border="0" cellpadding="0" cellspacing="0" class="img-wrapper">
+                                                    <tr>
+                                                      <td style="padding-bottom:18px"><img src="https://antwort-assets.s3.amazonaws.com/three-cols-images/ph-192x125@2x.png" border="0" alt="The White Whale" width="168" height="110" hspace="0" vspace="0" style="max-width:100%; " class="image"></td>
+                                                    </tr>
+                                                  </table>
+                                                  <table border="0" cellpadding="0" cellspacing="0">
+                                                    <tr>
+                                                      <td class="subtitle" style="font-family:Helvetica, Arial, sans-serif;font-size:16px;line-height:22px;font-weight:600;color:#2469A0;padding-bottom:6px">The White Whale</td>
+                                                    </tr>
+                                                  </table>
+                                                  <div class="col-copy" style="font-family:Helvetica, Arial, sans-serif;font-size:13px;line-height:20px;text-align:left;color:#333333">I take the good old fashioned ground that the whale is a fish, and call upon holy Jonah to back me. This fundamental thing settled, the next point is, in what internal respect does the whale differ from other fish.</div>
+                                                  <br>
+                                                </td>
+                                              </tr>
+                                            </table>
+
+                                            
+                                              <!--[if mso]></td><td width="192" style="width: 192px;" valign="top"><![endif]-->
+                                            
+                                          
+                                            <table width="192" border="0" cellpadding="0" cellspacing="0" align="left" class="column" style="width: 192px;">
+                                              <tr>
+                                                <td class="col" valign="top" style="padding-left:12px;padding-right:12px;padding-top:18px;padding-bottom:12px">
+                                                  <table border="0" cellpadding="0" cellspacing="0" class="img-wrapper">
+                                                    <tr>
+                                                      <td style="padding-bottom:18px"><img src="https://antwort-assets.s3.amazonaws.com/three-cols-images/ph-192x125@2x.png" border="0" alt="I am Ishmael" width="168" height="110" hspace="0" vspace="0" style="max-width:100%; " class="image"></td>
+                                                    </tr>
+                                                  </table>
+                                                  <table border="0" cellpadding="0" cellspacing="0">
+                                                    <tr>
+                                                      <td class="subtitle" style="font-family:Helvetica, Arial, sans-serif;font-size:16px;line-height:22px;font-weight:600;color:#2469A0;padding-bottom:6px">I am Ishmael</td>
+                                                    </tr>
+                                                  </table>
+                                                  <div class="col-copy" style="font-family:Helvetica, Arial, sans-serif;font-size:13px;line-height:20px;text-align:left;color:#333333">Here upon the very point of starting for the voyage, Captain Peleg and Captain Bildad were going it with a high hand on the quarter-deck, just as if they were to be joint-commanders at sea, as well as to all appearances in port.</div>
+                                                  <br>
+                                                </td>
+                                              </tr>
+                                            </table>
+
+                                            
+                                              <!--[if mso]></td><td width="192" style="width: 192px;" valign="top"><![endif]-->
+                                            
+                                          
+                                            <table width="192" border="0" cellpadding="0" cellspacing="0" align="left" class="column" style="width: 192px;">
+                                              <tr>
+                                                <td class="col" valign="top" style="padding-left:12px;padding-right:12px;padding-top:18px;padding-bottom:12px">
+                                                  <table border="0" cellpadding="0" cellspacing="0" class="img-wrapper">
+                                                    <tr>
+                                                      <td style="padding-bottom:18px"><img src="https://antwort-assets.s3.amazonaws.com/three-cols-images/ph-192x125@2x.png" border="0" alt="The Albatross flew across the ocean" width="168" height="110" hspace="0" vspace="0" style="max-width:100%; " class="image"></td>
+                                                    </tr>
+                                                  </table>
+                                                  <table border="0" cellpadding="0" cellspacing="0">
+                                                    <tr>
+                                                      <td class="subtitle" style="font-family:Helvetica, Arial, sans-serif;font-size:16px;line-height:22px;font-weight:600;color:#2469A0;padding-bottom:6px">The Albatross flew across the ocean</td>
+                                                    </tr>
+                                                  </table>
+                                                  <div class="col-copy" style="font-family:Helvetica, Arial, sans-serif;font-size:13px;line-height:20px;text-align:left;color:#333333">And somehow, at the time, I felt a sympathy and a sorrow for him, but for I don't know what, unless it was the cruel loss of his leg. And yet I also felt a strange awe of him; but that sort of awe, which I cannot at all describe.</div>
+                                                  <br>
+                                                </td>
+                                              </tr>
+                                            </table>
+
+                                          <!--[if mso]></td></tr></table><![endif]-->
+
+                                    </td>
+                                </tr>
+                            </table>
+
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    </body>
+</html>
