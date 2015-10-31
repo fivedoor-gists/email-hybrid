@@ -1,2 +1,2 @@
 # email-rwd
-Responsive Email Template
+Hybrid Email Solid Template
