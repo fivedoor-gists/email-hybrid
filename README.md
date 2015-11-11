@@ -1,5 +1,7 @@
 # Responsive Hybrid email baseline template
 
+![responsive email template](https://github.com/cssyren/email-hybrid/blob/master/img/preview.png?raw=true)
+
 A responsive email template based on ["Hybrid method"](http://webdesign.tutsplus.com/tutorials/creating-a-future-proof-responsive-email-without-media-queries--cms-23919) by Nicole Merlin.
 
 This email is a baseline experience template for subscribers using email apps with limited support for HTML and CSS—such as Outlook and Gmail.
