@@ -1,4 +1,4 @@
-# Responsive Hybrid email baseline template
+# Responsive Hybrid email template
 
 ![responsive email template](https://github.com/cssyren/email-hybrid/blob/master/img/preview.png?raw=true)
 
